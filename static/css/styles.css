@@ -1,0 +1,258 @@
+body {
+    height: 95%;
+}
+
+.tnails_small {
+    width: 75%;
+    height: 95vh;
+    /* flex-wrap: wrap; */
+    display: flex;
+    /* flex-direction: column; */
+    /* float: right; */
+}
+
+.tnails_small img {
+    height: auto;
+    width: auto;
+    max-height: 20%;
+    max-width: 90%;
+    margin: 1em;
+    border: 10px solid black;
+
+}
+
+.tnails_small .col {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    align-items: center;
+    flex-direction: column;
+    /* height: 100vh; */
+
+    /* padding-left: 4em; */
+    /* float: right; */
+}
+
+.tnails img {
+    /* display: grid; */
+    /* display: flex; */
+    /* width: 40%; */
+    /* justify-content: space-evenly; */
+    max-height: 40%;
+    max-width: 40%;
+    padding: 10em;
+
+}
+
+.sidebar {
+    float: left;
+    /* width: 50%; */
+    display: flex;
+    /* width: 100%; */
+    flex-direction: column;
+    /* justify-content: space-around; */
+    max-height: 100%;
+    /* font-size: 100%; */
+}
+
+.sidebar h1 {
+    font-size: 8em;
+    margin-bottom: 1em;
+    margin-left: 0.25em;
+    color: palevioletred;
+}
+
+
+
+.sidebar a {
+    /* font-size: 1cap; */
+    color: aqua;
+
+
+}
+
+.landing_group {
+    display: flex;
+    max-height: 100%;
+    /* align-items: flex-start; */
+    /* padding-bottom: 1em; */
+    justify-content: space-between;
+    /* display: inline-block; */
+    /* max-width: 100%; */
+    /* max-height: 100%; */
+    /* margin: 20px; */
+    /* flex-direction: row; */
+    color: white;
+    background-color: rebeccapurple;
+}
+
+/* .landing_group li {
+    /* height: 100%; */
+/* color: aqua; */
+/* } */
+
+ul li {
+
+    /* float: left; */
+    list-style-type: none;
+    text-decoration: none;
+    /* width: 50%; */
+    /* padding-right: 10px; */
+    /* justify-content: space-between; */
+    /* height: 100%; */
+    font-style: italic;
+    font-size: 3.5em;
+    /* color: aqua; */
+    padding-bottom: 1em;
+
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* :hover {
+        background-color: yellow;
+    } */
+}
+
+.macrame a:hover {
+    /* opacity: 0; */
+    /* background-color: yellow; */
+}
+
+.landing {
+    width: 70%;
+}
+
+.landing img {
+
+    float: right;
+    width: 100%;
+    margin-right: 0em;
+    height: 100%;
+
+    /* padding: 40px; */
+    /* display: flex; */
+}
+
+.tnails {
+    /* display: flex; */
+    width: 75%;
+    /* justify-content: space-evenly; */
+    flex-wrap: wrap;
+
+}
+
+.indivpic {
+    display: flex
+}
+
+.indivpic img {
+    float: right;
+    justify-content: space-around;
+    display: flex;
+    width: 30%;
+    height: 40%;
+
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 400px) {
+    .main {
+        max-width: 75%;
+    }
+
+    .sidebar {
+        width: 60%;
+    }
+
+    .sidebar h1 {
+
+        font-size: 3em;
+        padding-bottom: 0em;
+    }
+
+    /* .sidebar li {
+        font-size: 1em;
+        color: aqua;
+
+        /* max-height: 90%; */
+}
+
+
+/* .bio {
+        width: 40%;
+        margin-left: 1em;
+    } */
+
+.bio p {
+    width: 40%;
+    font-size: 75%;
+    /* margin-left: 1em; */
+    color: green;
+
+}
+
+@media (min-width: 1250px) {
+    .bio {
+        margin-left: 4em;
+        margin-top: 4em;
+        font-size: 4em;
+    }
+}
+
+.main {
+    /* display: flex; */
+    /* width: 100%; */
+
+    /* height: 100vh; */
+}
+
+.sidebar h1 {
+    &>a {
+        color: brown;
+    }
+}
+
+.main .sidebar {
+    width: 25%;
+}
+
+
+/* .indivpic .col {
+
+    background-color: orange;
+
+} */
+
+/* .indivpic .col {
+    background-color: orange;
+} */
+
+
+
+
+
+
+/* img {
+    display: flex;
+    object-fit: contain;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 40%;
+    height: 10%;
+    padding: 10px;
+} */
+
+
+
+
+
+
+/* .tnails a {
+    display: flex;
+    width: 25%;
+    height: 50px;
+    padding: 10px
+} */
