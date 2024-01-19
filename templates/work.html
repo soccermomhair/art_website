@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <!-- <script src="/static/js/efex.js"></script> -->
+
     <title>Landing page</title>
 </head>
 
@@ -23,92 +23,134 @@
                 <h1><a href="/">Alex Schutz</a></h1>
             </div>
             <ul>
-                <li style="font-size: 4em;"><a href="/work">Work</a></li>
+                <li>
+                    <h2><a href="/work">Work</a></h2>
+                </li>
                 <ul>
                     <li>
                         <!-- <div onmouseout="mouseOut()"></div> -->
-                        <!-- <div class="macrame"> -->
-                        <a id="macrame" href="/work/macrame_hangings">Macrame hangings</a>
+                        <!-- <div class="macrameimg"> -->
+                        <a id="macrameLabel" href="/work/macrame_hangings">Macrame hangings</a>
                         <!-- </div> -->
                     </li>
-                    <li><a href="/work/objects_for_home">Objects for the home</a></li>
-                    <li><a href="/work/central_illinois">Central Illinois</a></li>
-                    <li><a href="/work/rooms">Rooms</a></li>
-                    <li><a href="/work/circling_bug">Circling Bug</a></li>
-                    <li><a href="/work/woven_panels">Woven Panels</a></li>
-                    <li><a href="/work/ice_cream_truck">Ice Cream Truck</a></li>
-                    <li><a href="/work/every_cat_ive_ever_slept_with">Every Cat I've Ever Slept With</a></li>
-                    <li><a href="/work/glass">Glass</a></li>
-                    <li><a href="/work/older_work">Older Work</a></li>
-                    <li><a href="/work/furniture">Furniture</a></li>
+                    <li><a id="homeLabel" href="/work/objects_for_home">Objects for the home</a></li>
+                    <li><a id="illinoisLabel" href="/work/central_illinois">Central Illinois</a></li>
+                    <li><a id="roomsLabel" href="/work/rooms">Rooms</a></li>
+                    <li><a id="bugLabel" href="/work/circling_bug">Circling Bug</a></li>
+                    <li><a id="panelLabel" href="/work/woven_panels">Woven Panels</a></li>
+                    <li><a id="iceCreamLabel" href="/work/ice_cream_truck">Ice Cream Truck</a></li>
+                    <li><a id="catLabel" href="/work/every_cat_ive_ever_slept_with">Every Cat I've Ever Slept With</a>
+                    </li>
+                    <li><a id="glassLabel" href="/work/glass">Glass</a></li>
+                    <li><a id="oldLabel" href="/work/older_work">Older Work</a></li>
+                    <li><a id="furnitureLabel" href="/work/furniture">Furniture</a></li>
 
                 </ul>
-                <li style="font-size: 4em;"><a href="/about">About</a></li>
+                <li>
+                    <h2><a href="/about">About</a></h2>
+                </li>
             </ul>
         </div>
         <div class="tnails_small">
             <div class="col">
                 <a href="/work/circling_bug">
-                    <img src="static/img/_MG_9109.JPG" alt="basketball gym floorboards">
+                    <img id="bugImg" src="static/img/_MG_9109.JPG" alt="basketball gym floorboards">
                 </a>
                 <a href="_MG_9825.JPG">
-                    <img src="static/img/_MG_9825.JPG" alt="flooring in the shape of clouds">
+                    <img id="illinoisImg" src="static/img/_MG_9825.JPG" alt="flooring in the shape of clouds">
                 </a>
                 <a href="9822_weboptimized.jpg">
-                    <img src="static/img/9822_weboptimized.jpg" alt="drywall pieces with woven elements">
+                    <img id="panelImg" src="static/img/9822_weboptimized.jpg" alt="drywall pieces with woven elements">
                 </a>
                 <a href="110819_Sladek_7873.jpg">
-                    <img src="static/img/110819_Sladek_7873.jpg" alt="lantern covered with nylon">
+                    <img id="oldImg" src="static/img/110819_Sladek_7873.jpg" alt="lantern covered with nylon">
                 </a>
                 <a href="basket spiral.jpg">
-                    <img src="static/img/basket spiral.jpg" alt="spiral pattern of a basket">
+                    <img id="homeImg" src="static/img/basket spiral.jpg" alt="spiral pattern of a basket">
                 </a>
                 <a href="DSC_8556.jpg">
-                    <img src="static/img/DSC_8556.jpg" alt="bookshelf">
+                    <img id="furnitureImg" src="static/img/DSC_8556.jpg" alt="bookshelf">
                 </a>
             </div>
             <div class="col">
-                <!-- <div class="macrame"> -->
-                <a id="macrameimg" href="DSC_8669_smaller.jpg">
-                    <img id="macrame" src="static/img/DSC_8669_smaller.jpg"
+
+                <a href="DSC_8669_smaller.jpg">
+                    <!-- <div class="macrameimg"> -->
+                    <img id="macrameImg" src="static/img/DSC_8669_smaller.jpg"
                         alt="yellow macrame piece with chain maille interior">
+                    <!-- </div> -->
                 </a>
-                <!-- </div> -->
+
                 <a href="Glass-grate_weboptimized.jpg">
-                    <img src="static/img/Glass-grate_weboptimized.jpg" alt="glass design to look like a grate">
+                    <img id="glassImg" src="static/img/Glass-grate_weboptimized.jpg"
+                        alt="glass design to look like a grate">
                 </a>
                 <a href="IMG_0071.jpg">
-                    <img src="static/img/IMG_0071.jpg" alt="mirror with hologram paper">
+                    <img id="catImg" src="static/img/IMG_0071.jpg" alt="mirror with hologram paper">
                 </a>
                 <a href="IMG_6823.JPG">
-                    <img src="static/img/IMG_6823.JPG" alt="ice cream truck window at night">
+                    <img id="iceCreamImg" src="static/img/IMG_6823.JPG" alt="ice cream truck window at night">
                 </a>
                 <a href="_MG_0053.JPG">
-                    <img src="static/img/_MG_0053.JPG" alt="doorway">
+                    <img id="roomsImg" src="static/img/_MG_0053.JPG" alt="doorway">
                 </a>
-                <a href="OTE 4.jpg">
+                <!-- <a href="OTE 4.jpg">
                     <img src="static/img/OTE 4.jpg" alt="carpeted stairs with grass">
-                </a>
+                </a> -->
             </div>
         </div>
     </div>
     </div>
 
+    <script src="/static/js/efex.js"></script>
+    <!-- <script> -->
+    <!-- // const macramelabel = document.getElementById('macramelabel')
+        // const macrameimg = document.getElementById('macrameimg')
 
-    <script>
-        document.getElementById("macrame").style.color = "yellow";
-        document.getElementById("macrameimg").style.border = "5px solid yellow";
+
+        // macramelabel.addEventListener('mouseover', function handleMouseOver() {
+        //     macrameimg.style.outline = "5px solid yellow";
+        // });
+
+        // macramelabel.addEventListener('mouseout', function handleMouseOver() {
+        //     macrameimg.style.outline = "";
+        // });
+        // document.getElementById("macrame").style.color = "yellow";
+        // document.getElementsByClassName("macrameimg").style.outline = "5px solid yellow";
         // document.getElementsByClassName("macrame").addEventListener("mouseover", mouseOver);
         // document.getElementsByClassName("macrame").addEventListener("mouseout", mouseOut);
 
         // function mouseOver() {
-        //     style.color = "yellow"
-
+        //     var hilite = document.querySelectorAll(".macrameing")
+        //     hilite.forEach(function (el) {
+        //         hilite.style.outline = "5px solid yellow";
+        //     });
         // }
         // function mouseOut() {
-        //     style.color = "black";
+        //     var hilite = document.querySelectorAll(".macrameing")
+        //     hilite.forEach(function (el) {
+        //         hilite.style.outline = "5px solid black";
+        //     });
         // }
-    </script>
+        const hilitelabel = document.querySelector('#macramelabel'); -->
+    <!-- const hiliteimg = document.querySelector('#macrameimg');
+        hilitelabel.addEventListener('mouseover', (e) => {
+            hilitelabel.style.outline = "5px solid yellow"
+            hiliteimg.style.outline = "5px solid yellow"
+        })
+        hilitelabel.addEventListener('mouseout', (e) => {
+            hilitelabel.style.outline = ""
+            hiliteimg.style.outline = ""
+        })
+        hiliteimg.addEventListener('mouseover', (e) => {
+            hilitelabel.style.outline = "5px solid yellow"
+            hiliteimg.style.outline = "5px solid yellow"
+        })
+        hiliteimg.addEventListener('mouseout', (e) => {
+            hilitelabel.style.outline = ""
+            hiliteimg.style.outline = ""
+        }) -->
+    <!-- </script> -->
 </body>
 
 </html>
