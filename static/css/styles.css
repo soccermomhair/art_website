@@ -1,6 +1,11 @@
 body {
-    height: 100vh;
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    /* height: 100vh; */
+    top: 0;
     font-size: calc(15px + 0.390625vw);
+    /* overflow: hidden; */
 }
 
 .tnails_small {
@@ -121,8 +126,9 @@ border: 5px solid black; */
     top: 50%;
     width: auto;
     margin-top: -22px;
-    padding: 16px;
-    color: black;
+    padding: 8px;
+    background-color: white;
+    color: rgb(248, 54, 219);
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -217,6 +223,7 @@ border: 5px solid black; */
     margin-left: 0.25rem;
     color: palevioletred;
     display: flex;
+    /* margin-top: 0; */
 }
 
 .sidebar h2 {
@@ -229,9 +236,17 @@ border: 5px solid black; */
     /* flex-wrap: nowrap; */
 }
 
-.landing_group {
+.landing_group .sidebar {
+    height: 100%;
+    background-color: rebeccapurple;
+
+}
+
+body .landing_group {
     display: flex;
-    max-height: 100%;
+    position: relative;
+    height: 100%;
+    width: 100%;
     /* align-items: flex-start; */
     /* padding-bottom: 1em; */
     justify-content: space-between;
@@ -241,35 +256,22 @@ border: 5px solid black; */
     /* margin: 20px; */
     /* flex-direction: row; */
     color: white;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
 }
 
-/* .landing_group li {
-    /* height: 100%; */
-/* color: aqua; */
-/* } */
+/* .landing img { */
+/* height: 100%; */
+/* color: aqua;} */
+
 
 ul li {
 
-    /* float: left; */
-    list-style-type: none;
+    /* margin-bottom: 3px; */
+    /* list-style-type: none; */
     text-decoration: none;
-    /* flex-wrap: nowrap; */
-    /* width: 50%; */
-    /* padding-right: 10px; */
-    /* justify-content: space-between; */
-    /* height: 100%; */
-    font-style: italic;
-    /* font-size: 1.3rem; */
-    /* color: aqua; */
-    padding-bottom: 0.5rem;
 
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* :hover {
-        background-color: yellow;
-    } */
 }
+
 
 /* ul li {
     h2 {
@@ -282,20 +284,8 @@ ul li {
 /* background-color: yellow; */
 /* } */
 
-.landing {
-    width: 70%;
-}
 
-.landing img {
 
-    float: right;
-    width: 100%;
-    margin-right: 0rem;
-    height: 100%;
-
-    /* padding: 40px; */
-    /* display: flex; */
-}
 
 .indivpic {
     display: flex
@@ -315,17 +305,36 @@ a {
 }
 
 .bio p {
-    width: 40%;
-    font-size: 75%;
-    /* margin-left: 1em; */
+    width: 60%;
+    /* font-size: 75%; */
+    display: flex;
     color: green;
+    justify-content: center;
+    /* margin-top: 3rem; */
+    padding-top: 3rem;
+
+    /* align-content: center; */
 
 }
 
 @media (max-width: 450px) {
+
     /* .main {
 
         height: calc(100vh - 40px);
+    } */
+    .landing {
+        display: flex;
+    }
+
+    .landing img {
+        /* width: 100%; */
+        /* height: auto; */
+        object-fit: fill;
+    }
+
+    /* .landing {
+        height: 100%;
     } */
 
     .sidebar>ul {
@@ -336,17 +345,22 @@ a {
         /* max-width: 100%; */
     }
 
-
+    .sidebar li {
+        font-size: 1.0rem;
+    }
 
     .sidebar a {
         /* font-size: 1rem; */
         width: 60%;
     }
 
+    .sidebar h1 {
+        font-size: 1.4rem;
+    }
 
     h1 {
         &>a {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: rgb(201, 22, 177);
             padding-left: 0.75rem;
         }
@@ -374,7 +388,33 @@ a {
 
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .landing_group {
+        /* max-height: 100vh; */
+    }
+
+    .landing_group .sidebar {
+        object-fit: contain;
+    }
+
+    .landing {
+        width: 75%;
+    }
+
+    .landing img {
+
+        float: right;
+        /* width: 100%; */
+        margin-right: 0rem;
+        /* max-height: 100%; */
+        max-width: 100%;
+        object-fit: cover;
+
+        /* padding: 40px; */
+        /* display: flex; */
+    }
+}
+
 
 @media (min-width: 1400px) {
     .bio {
