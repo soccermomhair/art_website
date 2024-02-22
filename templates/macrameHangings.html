@@ -8,21 +8,27 @@
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/css/styles.css" />
-    <title>Macrame Hangings</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Alex Schutz: Macrame</title>
 </head>
 
 <body>
-
-    <div class="main">
+    <h1><a href="/">Alex Schutz</a></h1>
+    <hr>
+    <div class="slidemain">
         <div class="sidebar">
-            <div>
-                <h1><a href="/">Alex Schutz</a></h1>
-            </div>
+
             <ul>
-                <li><a href="/work">Work</a></li>
+                <li>
+                    <h3><a href="/work">Work</a></h3>
+                </li>
                 <ul>
-                    <li><a style="color: red" href="/work/macrame_hangings">Macrame hangings</a></li>
+                    <li><a style="text-shadow: yellow 2px 2px" href="/work/macrame_hangings">Macrame hangings</a></li>
                     <li><a href="/work/objects_for_home">Objects for the home</a></li>
                     <li><a href="/work/central_illinois">Central Illinois</a></li>
                     <li><a href="/work/rooms">Rooms</a></li>
@@ -32,81 +38,139 @@
                     <li><a href="/work/every_cat_ive_ever_slept_with">Every Cat I've Ever Slept With</a></li>
                     <li><a href="/work/glass">Glass</a></li>
                     <li><a href="/work/older_work">Older Work</a></li>
-                    <li><a href="/work/furniture">Furniture</a></li>
+                    <li style="padding-bottom: 10px;"><a href="/work/furniture">Furniture</a></li>
 
                 </ul>
-                <li><a href="/about">About</a></li>
+                <li>
+                    <h3><a href="/about">About</a></h3>
+                </li>
             </ul>
         </div>
         <div class="tnails">
             <div class="slide">
-                <div class="numbertext">1 / 10</div>
-                <img class="mySlides" src="/static/img/macrame/DSC_8358_Edit.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <div class="numbertext">1 / 14</div>
+                <a href="/work/woven_panels/leatherpouch">
+                    <img class="mySlides" src="/static/img/macrame/DSC_8358_Edit.jpg"
+                        alt="Leather pouch with stitching on burlap">
+                </a>
+                <div class="text">leather, sisal, paint on burlap</div>
             </div>
             <div class="slide">
-                <div class="numbertext">2 / 10</div>
-                <img src="/static/img/macrame/DSC_8366.jpg" alt="leather pouch with stitching">
-                <div class="text">Caption Text</div>
-            </div>
-
-            <div class="slide">
-                <div class="numbertext">3 / 10</div>
-                <img class="mySlides" src="/static/img/macrame/Alex_Hanging1_Vertical1.jpg"
-                    alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
-            </div>
-            <div class="slide">
-                <div class="numbertext">4 / 10</div>
-                <img class="mySlides" src="/static/img/macrame/Alex_Hanging1_WS1.jpg"
-                    alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
-            </div>
-            <div class="slide">
-                <div class="numbertext">5 / 10</div>
-                <img class="mySlides" src="/static/img/macrame/Orange_full.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
-            </div>
-            <div class="slide">
-                <div class="numbertext">6 / 10</div>
-                <img class="mySlides" src="/static/img/macrame/DSC_8636_smaller.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <div class="numbertext">2 / 14</div>
+                <a href="/work/woven_panels/leatherpouch_detail">
+                    <img src="/static/img/macrame/DSC_8366.jpg" alt="Leather pouch with stitching on burlap - detail">
+                </a>
+                <div class="text">leather, sisal, paint on burlap</div>
             </div>
 
             <div class="slide">
-                <div class="numbertext">7 / 10</div>
-                <img class="mySlides" src="/static/img/macrame/DSC08724.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <div class="numbertext">3 / 14</div>
+                <a href="/work/woven_panels/whitecoil">
+                    <img class="mySlides" src="/static/img/macrame/Alex_Hanging1_Vertical1.jpg"
+                        alt="coiled basket with surrounding armature and hanging flaps">
+                </a>
+                <div class="text">rope, cotton string, Plastidip, copper wire</div>
             </div>
             <div class="slide">
-                <div class="numbertext">8 / 10</div>
-                <img class="mySlides" src="/static/img/macrame/DSC08730(1).jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <div class="numbertext">4 / 14</div>
+                <a href="/work/woven_panels/whitecoil_detail">
+                    <img class="mySlides" src="/static/img/macrame/Alex Hanging1 Under1.jpg"
+                        alt="coiled basket with surrounding armature and hanging flaps - detail">
+                </a>
+                <div class="text">rope, cotton string, Plastidip, copper wire</div>
             </div>
             <div class="slide">
-                <div class="numbertext">9 / 10</div>
-                <img class="mySlides" src="/static/img/macrame/Wall_Piece_ASchutz1.jpg"
-                    alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <div class="numbertext">5 / 14</div>
+                <a href="/work/woven_panels/orangering">
+                    <img class="mySlides" src="/static/img/macrame/Orange_full.jpg"
+                        alt="cylinder of yellow macrame pattern over chain maille center">
+                </a>
+                <div class="text">survey line, brass</div>
+            </div>
+            <div class="slide">
+                <div class="numbertext">6 / 14</div>
+                <a href="/work/woven_panels/orangering_detail">
+                    <img class="mySlides" src="/static/img/macrame/DSC_8636_smaller.jpg"
+                        alt="cylinder of yellow macrame pattern over chain maille center - detail">
+                </a>
+                <div class="text">survey line, brass</div>
             </div>
 
             <div class="slide">
-                <div class="numbertext">10 / 10</div>
-                <img class="mySlides" src="/static/img/macrame/Wall_Piece_ASchutz_CU1.jpg"
-                    alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <div class="numbertext">7 / 14</div>
+                <a href="/work/woven_panels/whitetear">
+                    <img class="mySlides" src="/static/img/macrame/DSC08724.jpg"
+                        alt="tapestry of bubble textured pattern with teardrop opening">
+                </a>
+                <div class="text">cotton string, dowel, bamboo rings</div>
+            </div>
+            <div class="slide">
+                <div class="numbertext">8 / 14</div>
+                <a href="/work/woven_panels/whitetear_detail">
+                    <img class="mySlides" src="/static/img/macrame/DSC08730(1).jpg"
+                        alt="tapestry of bubble textured pattern with teardrop opening - detail">
+                </a>
+                <div class="text">cotton string, dowel, bamboo rings</div>
+            </div>
+            <div class="slide">
+                <div class="numbertext">9 / 14</div>
+                <a href="/work/woven_panels/pinkmacrame">
+                    <img class="mySlides" src="/static/img/macrame/Wall_Piece_ASchutz1.jpg"
+                        alt="Wall-mounted macrame in pink and brown">
+                </a>
+                <div class="text">survey line, jute, dowel</div>
+            </div>
+            <div class="slide">
+                <div class="numbertext">10 / 14</div>
+                <a href="/work/woven_panels/pinkmacrame_detail">
+                    <img class="mySlides" src="/static/img/macrame/Wall_Piece_ASchutz_CU1.jpg"
+                        alt="Wall-mounted macrame in pink and brown - detail">
+                </a>
+                <div class="text">survey line, jute, dowel</div>
+            </div>
+            <div class="slide">
+                <div class="numbertext">11 / 14</div>
+                <a href="/work/woven_panels/arch">
+                    <img class="mySlides" src="/static/img/macrame/_DSF5637.jpg" alt="arch-shaped woven wall-hanging">
+                </a>
+                <div class="text">rope, jute</div>
+            </div>
+            <div class="slide">
+                <div class="numbertext">12 / 14</div>
+                <a href="/work/woven_panels/arch_detail">
+                    <img class="mySlides" src="/static/img/macrame/DSC_7283 copy.jpg"
+                        alt="arch-shaped woven wall-hanging - detail">
+                </a>
+                <div class="text">rope, jute</div>
+            </div>
+            <div class="slide">
+                <div class="numbertext">13 / 14</div>
+                <a href="/work/woven_panels/greendiamond">
+                    <img class="mySlides" src="/static/img/macrame/HeavenShow8 copy.jpg"
+                        alt="neon green form with diamond pattern">
+                </a>
+                <div class="text">parachord, wire clothesline</div>
+            </div>
+            <div class="slide">
+                <div class="numbertext">14 / 14</div>
+                <a href="/work/woven_panels/greendiamond_detail">
+                    <img class="mySlides" src="/static/img/macrame/HeavenShow12 copy.jpg"
+                        alt="neon green form with diamond pattern - detail">
+                </a>
+                <div class="text">parachord, wire clothesline</div>
             </div>
             <!-- Next and previous buttons -->
             <a class="prev" onclick="prevSlide()">&#10094;</a>
             <a class="next" onclick="nextSlide()">&#10095;</a>
         </div>
         <br>
-
-
-        <!-- <script src="/static/js/efex.js"></script> -->
     </div>
+
+
+    <!-- <script src="/static/js/efex.js"></script> -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript" src="/static/js/slideshow.js"></script>
+
 </body>
 
 </html>
