@@ -278,7 +278,7 @@ hr {
     /* display: flex; */
     /* width: 100%; */
     flex-direction: column;
-    /* padding-right: 5px; */
+    padding-right: 5px;
     flex-wrap: nowrap;
     background-color: white;
     /* overflow: auto; */
@@ -417,14 +417,15 @@ a {
 }
 
 .bio p {
-    width: 60%;
+    /* width: 60%; */
     /* font-size: 75%; */
     display: flex;
     color: green;
     justify-content: center;
     /* margin-top: 3rem; */
     padding-top: 3rem;
-
+    padding-left: 3rem;
+    padding-right: 1rem;
     /* align-content: center; */
 
 }
