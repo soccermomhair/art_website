@@ -8,18 +8,24 @@
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/css/styles.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Furniture</title>
 </head>
 
 <body>
-    <div class="main">
+    <h1><a href="/">Alex Schutz</a></h1>
+    <hr>
+    <div class="slidemain">
         <div class="sidebar">
-            <div>
-                <h1><a href="/">Alex Schutz</a></h1>
-            </div>
             <ul>
-                <li><a href="/work">Work</a></li>
+                <li>
+                    <h3><a href="/work">Work</a></h3>
+                </li>
                 <ul>
                     <li><a href="/work/macrame_hangings">Macrame hangings</a></li>
                     <li><a href="/work/objects_for_home">Objects for the home</a></li>
@@ -31,79 +37,111 @@
                     <li><a href="/work/every_cat_ive_ever_slept with">Every Cat I've Ever Slept With</a></li>
                     <li><a href="/work/glass">Glass</a></li>
                     <li><a href="/work/older_work">Older Work</a></li>
-                    <li><a style="color: red" href="/work/furniture">Furniture</a></li>
+                    <li><a style="text-shadow: yellow 2px 2px; padding-bottom: 10px;"
+                            href="/work/furniture">Furniture</a></li>
 
                 </ul>
-                <li><a href="/about">About</a></li>
+                <li>
+                    <h3><a href="/about">About</a></h3>
+                </li>
             </ul>
         </div>
         <div class="tnails">
             <!-- <div class="col"> -->
             <div class="slide">
                 <div class="numbertext">1 / 13</div>
-                <img src="/static/img/furniture/Copy of DSC08622.jpg" alt="leather pouch with stitching">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/furniture/Copy of DSC08622.jpg">
+                    <img src="/static/img/furniture/Copy of DSC08622.jpg" alt="maple stool">
+                </a>
+                <div class="text">turned maple stool</div>
             </div>
             <div class="slide">
                 <div class="numbertext">2 / 13</div>
-                <img src="/static/img/furniture/Copy of DSC08654.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/furniture/Copy of DSC08654.jpg">
+                    <img src="/static/img/furniture/Copy of DSC08654.jpg" alt="stool with woven seat">
+                </a>
+                <div class="text">stool with woven seat</div>
             </div>
             <div class="slide">
                 <div class="numbertext">3 / 13</div>
-                <img src="/static/img/furniture/Copy of DSC08659.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/furniture/Copy of DSC08659.jpg">
+                    <img src="/static/img/furniture/Copy of DSC08659.jpg" alt="stool with woven seat from above">
+                </a>
+                <div class="text">stool with woven seat</div>
             </div>
             <div class="slide">
                 <div class="numbertext">4 / 13</div>
-                <img src="/static/img/furniture/DSC_8095-Edit.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/furniture/DSC_8095-Edit.jpg">
+                    <img src="/static/img/furniture/DSC_8095-Edit.jpg"
+                        alt="desk that encircles user covered in grass-patterned laminate">
+                </a>
+                <div class="text">mdf, laminate</div>
             </div>
             <div class="slide">
                 <div class="numbertext">5 / 13</div>
-                <img src="/static/img/furniture/DSC_8099-Edit.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/furniture/DSC_8099-Edit.jpg">
+                    <img src="/static/img/furniture/DSC_8099-Edit.jpg"
+                        alt="desk that encircles user covered in grass-patterned laminate, detatil">
+                </a>
+                <div class="text">mdf, laminate</div>
             </div>
             <div class="slide">
                 <div class="numbertext">6 / 13</div>
-
-                <img src="/static/img/furniture/DSC_8256-Edit.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/furniture/DSC_8256-Edit.jpg">
+                    <img src="/static/img/furniture/DSC_8256-Edit.jpg" alt="bench">
+                </a>
+                <div class="text"></div>
             </div>
             <div class="slide">
                 <div class="numbertext">7 / 13</div>
-                <img src="/static/img/furniture/DSC_8195.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/furniture/DSC_8195.jpg">
+                    <img src="/static/img/furniture/DSC_8195.jpg" alt="bench detail: carved seat">
+                </a>
+                <div class="text"></div>
             </div>
             <div class="slide">
                 <div class="numbertext">8 / 13</div>
-                <img src="/static/img/furniture/DSC_8304.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/furniture/DSC_8304.jpg">
+                    <img src="/static/img/furniture/DSC_8304.jpg" alt="night stand">
+                </a>
+                <div class="text"></div>
             </div>
             <div class="slide">
                 <div class="numbertext">9 / 13</div>
-                <img src="/static/img/furniture/DSC_8403.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/furniture/DSC_8403.jpg">
+                    <img src="/static/img/furniture/DSC_8403.jpg" alt="two-tier steel frame table">
+                </a>
+                <div class="text">steel, plywood</div>
             </div>
             <div class="slide">
                 <div class="numbertext">10 / 13</div>
-                <img src="/static/img/furniture/DSC_8461-tilt.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/furniture/DSC_8461-tilt.jpg">
+                    <img src="/static/img/furniture/DSC_8461-tilt.jpg" alt="music console">
+                </a>
+                <div class="text"></div>
             </div>
             <div class="slide">
                 <div class="numbertext">11 / 13</div>
-                <img src="/static/img/furniture/DSC_8556.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/furniture/DSC_8556.jpg">
+                    <img src="/static/img/furniture/DSC_8556.jpg" alt="bookshelf">
+                </a>
+                <div class="text"></div>
             </div>
             <div class="slide">
                 <div class="numbertext">12 / 13</div>
-                <img src="/static/img/furniture/DSC08722.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/furniture/DSC08722.jpg">
+                    <img src="/static/img/furniture/DSC08722.jpg"
+                        alt="2 low tables with marble inserts and arced edges">
+                </a>
+                <div class="text">steel, laminate, marble, mdf</div>
             </div>
             <div class="slide">
                 <div class="numbertext">13 / 13</div>
-                <img src="/static/img/furniture/Web_DSC08695.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/furniture/Web_DSC08695.jpg">
+                    <img src="/static/img/furniture/Web_DSC08695.jpg"
+                        alt="2 low tables with marble inserts and arced edges">
+                </a>
+                <div class="text">steel, laminate, marble, mdf</div>
             </div>
             <!-- Next and previous buttons -->
             <a class="prev" onclick="prevSlide()">&#10094;</a>

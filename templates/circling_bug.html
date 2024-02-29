@@ -8,76 +8,107 @@
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/css/styles.css" />
-    <title>First body of work</title>
+    <!-- <link rel="stylesheet" href="/static/css/styles.css" /> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Circling bug installation</title>
 </head>
 
 <body>
-    <div class="main">
+    <h1><a href="/">Alex Schutz</a></h1>
+    <hr>
+    <div class="slidemain">
         <div class="sidebar">
-
-            <div>
-                <h1><a href="/">Alex Schutz</a></h1>
-            </div>
             <ul>
-                <li><a href="/work">Work</a></li>
+                <li>
+                    <h3><a href="/work">Work</a></h3>
+                </li>
                 <ul>
                     <li><a href="/work/macrame_hangings">Macrame hangings</a></li>
                     <li><a href="/work/objects_for_home">Objects for the home</a></li>
                     <li><a href="/work/central_illinois">Central Illinois</a></li>
                     <li><a href="/work/rooms">Rooms</a></li>
-                    <li><a style="color: red" href="/work/circling_bug">Circling Bug</a></li>
+                    <li><a style="text-shadow: yellow 2px 2px" href="/work/circling_bug">Circling Bug</a></li>
                     <li><a href="/work/woven_panels">Woven Panels</a></li>
                     <li><a href="/work/ice_cream_truck">Ice Cream Truck</a></li>
                     <li><a href="/work/every_cat_ive_ever_slept_with">Every Cat I've Ever Slept With</a></li>
                     <li><a href="/work/glass">Glass</a></li>
                     <li><a href="/work/older_work">Older Work</a></li>
-                    <li><a href="/work/furniture">Furniture</a></li>
+                    <li style="padding-bottom: 10px;"><a href="/work/furniture">Furniture</a></li>
 
                 </ul>
-                <li><a href="/about">About</a></li>
+                <li>
+                    <h3><a href="/about">About</a></h3>
+                </li>
             </ul>
         </div>
         <div class="tnails">
             <div class="slide">
                 <div class="numbertext">1 / 8</div>
-                <img src="/static/img/circling_bug/9099_weboptimized.jpg" alt="clothesline pic">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/circling_bug/9099_weboptimized.jpg">
+                    <img src="/static/img/circling_bug/9099_weboptimized.jpg"
+                        alt="clothesline with 3 yellow vinyl pouches attached">
+                </a>
+                <div class="text">multimedia installation</div>
             </div>
             <div class="slide">
                 <div class="numbertext">2 / 8</div>
-                <img src="/static/img/circling_bug/9107_weboptimized.jpg" alt="clothesline pic">
-                <div class="text">Caption Two</div>
+                <a href="/static/img/circling_bug/9107_weboptimized.jpg">
+                    <img src="/static/img/circling_bug/9107_weboptimized.jpg"
+                        alt="clothesline with paper maiche pouch and scrap of leather hanging from it. Gym floorboards leaning against the wall behind.">
+                </a>
+                <div class="text">multimedia installation</div>
             </div>
             <div class="slide">
                 <div class="numbertext">3 / 8</div>
-                <img src="/static/img/circling_bug/Circling-bug-Screenshot.jpg" alt="clothesline pic">
-                <div class="text">Caption Two</div>
+                <a href="/static/img/circling_bug/Circling-bug-Screenshot.jpg">
+                    <img src="/static/img/circling_bug/Circling-bug-Screenshot.jpg"
+                        alt="still from video showing a bug circling a plastic cup's rim">
+                </a>
+                <div class="text">multimedia installation</div>
             </div>
             <div class="slide">
                 <div class="numbertext">4 / 8</div>
-                <img src="/static/img/circling_bug/9114_weboptimized.jpg" alt="clothesline pic">
-                <div class="text">Caption Two</div>
+                <a href="/static/img/circling_bug/9114_weboptimized.jpg">
+                    <img src="/static/img/circling_bug/9114_weboptimized.jpg"
+                        alt="chicken wire formed into a pyramid and stuffed with foam, yellow plastilina balls on the floor">
+                </a>
+                <div class="text">multimedia installation</div>
             </div>
             <div class="slide">
                 <div class="numbertext">5 / 8</div>
-                <img src="/static/img/circling_bug/9126_weboptimized.jpg" alt="clothesline pic">
-                <div class="text">Caption Two</div>
+                <a href="/static/img/circling_bug/9126_weboptimized.jpg">
+                    <img src="/static/img/circling_bug/9126_weboptimized.jpg"
+                        alt="teeny projection onto small wood screen, plastilina yellow ball next to it">
+                </a>
+                <div class="text">multimedia installation</div>
             </div>
             <div class="slide">
                 <div class="numbertext">6 / 8</div>
-                <img src="/static/img/circling_bug/9152_weboptimized.jpg" alt="clothesline pic">
-                <div class="text">Caption Two</div>
+                <a href="/static/img/circling_bug/9152_weboptimized.jpg">
+                    <img src="/static/img/circling_bug/9152_weboptimized.jpg"
+                        alt="view down a clothesline with a variety of yellow attachments">
+                </a>
+                <div class="text">multimedia installation</div>
             </div>
             <div class="slide">
                 <div class="numbertext">7 / 8</div>
-                <img src="/static/img/circling_bug/9158_weboptimized.jpg" alt="clothesline pic">
-                <div class="text">Caption Two</div>
+                <a href="/static/img/circling_bug/9158_weboptimized.jpg">
+                    <img src="/static/img/circling_bug/9158_weboptimized.jpg"
+                        alt="foam cushion nailed to the wall and an unattached canvas cushion cover with a print of the installation on it">
+                </a>
+                <div class="text">multimedia installation</div>
             </div>
             <div class="slide">
                 <div class="numbertext">8 / 8</div>
-                <img src="/static/img/circling_bug/Game_Panorama1.jpg" alt="clothesline pic">
-                <div class="text">Caption Two</div>
+                <a href="/static/img/circling_bug/Game_Panorama1.jpg">
+                    <img src="/static/img/circling_bug/Game_Panorama1.jpg" alt="panorama view of entire installation">
+                </a>
+                <div class="text">multimedia installation</div>
             </div>
             <!-- Next and previous buttons -->
             <a class="prev" onclick="prevSlide()">&#10094;</a>

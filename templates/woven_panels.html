@@ -8,66 +8,91 @@
     <!-- CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/css/styles.css" />
-    <title>First body of work</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Alex Schutz: Macrame</title>
 </head>
 
 <body>
-
-    <div class="main">
+    <h1><a href="/">Alex Schutz</a></h1>
+    <hr>
+    <div class="slidemain">
         <div class="sidebar">
-            <div>
-                <h1><a href="/">Alex Schutz</a></h1>
-            </div>
+
             <ul>
-                <li><a href="/work">Work</a></li>
+                <li>
+                    <h3><a href="/work">Work</a></h3>
+                </li>
                 <ul>
                     <li><a href="/work/macrame_hangings">Macrame hangings</a></li>
                     <li><a href="/work/objects_for_home">Objects for the home</a></li>
                     <li><a href="/work/central_illinois">Central Illinois</a></li>
                     <li><a href="/work/rooms">Rooms</a></li>
                     <li><a href="/work/circling_bug">Circling Bug</a></li>
-                    <li><a style="color: red" href="/work/woven_panels">Woven Panels</a></li>
+                    <li><a style="text-shadow: yellow 2px 2px" href="/work/woven_panels">Woven Panels</a></li>
                     <li><a href="/work/ice_cream_truck">Ice Cream Truck</a></li>
                     <li><a href="/work/every_cat_ive_ever_slept with">Every Cat I've Ever Slept With</a></li>
                     <li><a href="/work/glass">Glass</a></li>
                     <li><a href="/work/older_work">Older Work</a></li>
-                    <li><a href="/work/furniture">Furniture</a></li>
+                    <li style="padding-bottom: 10px;"><a href="/work/furniture">Furniture</a></li>
 
                 </ul>
-                <li><a href="/about">About</a></li>
+                <li>
+                    <h3><a href="/about">About</a></h3>
+                </li>
             </ul>
         </div>
         <div class="tnails">
             <div class="slide">
                 <div class="numbertext">1 / 6</div>
-                <img src="/static/img/woven_panels/9737_weboptimized_2.jpg" alt="leather pouch with stitching">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/woven_panels/9737_weboptimized_2.jpg">
+                    <img src="/static/img/woven_panels/9737_weboptimized_2.jpg"
+                        alt="the back of four small drywall panels with woven panels fit inside">
+                </a>
+                <div class="text">window, drywall, wood, found textile, jute</div>
             </div>
             <div class="slide">
                 <div class="numbertext">2 / 6</div>
-                <img src="/static/img/woven_panels/9772_weboptimized.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/woven_panels/9772_weboptimized.jpg">
+                    <img src="/static/img/woven_panels/9772_weboptimized.jpg"
+                        alt="the back of four small drywall panels with woven panels fit inside - detail">
+                </a>
+                <div class="text">wood, jute, drywall</div>
             </div>
             <div class="slide">
                 <div class="numbertext">3 / 6</div>
-                <img src="/static/img/woven_panels/Web_DSC08746.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/woven_panels/Web_DSC08746.jpg">
+                    <img src="/static/img/woven_panels/Web_DSC08746.jpg" alt="L-shaped sculpture with woven face">
+                </a>
+                <div class="text">wood, seagrass, foam, found textile</div>
             </div>
             <div class="slide">
                 <div class="numbertext">4 / 6</div>
-                <img src="/static/img/woven_panels/Web_DSC08755.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/woven_panels/Web_DSC08755.jpg">
+                    <img src="/static/img/woven_panels/Web_DSC08755.jpg"
+                        alt="L-shaped sculpture with woven face - left profile">
+                </a>
+                <div class="text">wood, seagrass, foam, found textile</div>
             </div>
             <div class="slide">
                 <div class="numbertext">5 / 6</div>
-                <img src="/static/img/woven_panels/Web_DSC08779.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/woven_panels/Web_DSC08779.jpg">
+                    <img src="/static/img/woven_panels/Web_DSC08779.jpg"
+                        alt="assortment of panels with chain maille, fiberglas, or woven jute">
+                </a>
+                <div class="text">wood, fiberglas, brass, jute</div>
             </div>
             <div class="slide">
                 <div class="numbertext">6 / 6</div>
-                <img src="/static/img/woven_panels/Web_DSC08804.jpg" alt="hanging from ceiling macrame">
-                <div class="text">Caption Text</div>
+                <a href="/static/img/woven_panels/Web_DSC08804.jpg">
+                    <img src="/static/img/woven_panels/Web_DSC08804.jpg"
+                        alt="assortment of panels with chain maille, fiberglas, or woven jute">
+                </a>
+                <div class="text">wood, fiberglas, brass, jute</div>
             </div>
             <!-- Next and previous buttons -->
             <a class="prev" onclick="prevSlide()">&#10094;</a>
